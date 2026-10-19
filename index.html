@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover online learning at WonderNest Academy: Math, English, Coding, Quran, Science and creative workshops.">
+    <title>WonderNest Academy | Learn, Play & Grow</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="WonderNest Academy home">
+            <span class="brand-mark">✦</span>
+            <span>WonderNest <small>ACADEMY</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#academic-classes">Subjects</a>
+            <a href="#explore">Explore Classes</a>
+            <a href="#learning-options">Class Types</a>
+            <a href="#student-stories">Student Stories</a>
+            <a href="#contact" class="nav-cta">Book a Free Demo</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow">ONLINE LEARNING FOR CURIOUS MINDS</p>
+                <h1>Big dreams start with little <span>discoveries.</span></h1>
+                <p class="hero-description">
+                    Friendly online classes that help learners build skills, grow confidence
+                    and enjoy learning — one step at a time.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#contact">Book a Free Demo</a>
+                    <a class="button button-secondary" href="#explore">Explore Classes</a>
+                </div>
+                <p class="hero-note">Live classes · Recorded lessons · Different learning levels</p>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=85"
+                     alt="Children learning together in a bright classroom">
+                <div class="hero-note-card">
+                    <span class="note-icon">✦</span>
+                    <div>
+                        <strong>Learn with confidence</strong>
+                        <p>Curiosity comes first.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section intro-strip">
+            <p><strong>Learning should feel encouraging.</strong> We focus on clear explanations, guided practice and a welcoming learning experience.</p>
+        </section>
+
+        <section class="section" id="academic-classes">
+            <div class="section-heading">
+                <p class="eyebrow">FIND YOUR NEXT ADVENTURE</p>
+                <h2>Popular Academic Curriculum Classes</h2>
+                <p>Explore subjects that support school learning and build useful skills.</p>
+            </div>
+
+            <div class="subject-grid">
+                <article class="subject-card subject-blue">
+                    <div class="subject-icon">∑</div>
+                    <h3>Math & Numbers</h3>
+                    <p>Build number sense, problem-solving skills and maths confidence.</p>
+                    <a href="#explore" data-subject-link="Math">Explore classes <span>→</span></a>
+                </article>
+                <article class="subject-card subject-lavender">
+                    <div class="subject-icon">Aa</div>
+                    <h3>English & Reading</h3>
+                    <p>Practise grammar, reading, vocabulary and communication.</p>
+                    <a href="#explore" data-subject-link="English">Explore classes <span>→</span></a>
+                </article>
+                <article class="subject-card subject-peach">
+                    <div class="subject-icon">⚗</div>
+                    <h3>Science & Discovery</h3>
+                    <p>Ask questions and explore how the world around us works.</p>
+                    <a href="#explore" data-subject-link="Science">Explore classes <span>→</span></a>
+                </article>
+                <article class="subject-card subject-mint">
+                    <div class="subject-icon">⌘</div>
+                    <h3>Coding & Technology</h3>
+                    <p>Learn coding concepts, logic and creative problem-solving.</p>
+                    <a href="#explore" data-subject-link="Coding">Explore classes <span>→</span></a>
+                </article>
+                <article class="subject-card subject-mint">
+                    <div class="subject-icon">۞</div>
+                    <h3>Quran Learning</h3>
+                    <p>Explore Quran learning with a supportive, structured approach.</p>
+                    <a href="#explore" data-subject-link="Quran">Explore classes <span>→</span></a>
+                </article>
+                <article class="subject-card subject-blue">
+                    <div class="subject-icon">✎</div>
+                    <h3>Creative Workshops</h3>
+                    <p>Try creative activities and discover new interests.</p>
+                    <a href="#explore" data-subject-link="Workshops">Explore classes <span>→</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section explore-section" id="explore">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR LEARNING, YOUR WAY</p>
+                <h2>Explore Classes</h2>
+                <p>Search and filter the sample class listings to find a learning option.</p>
+            </div>
+
+            <div class="class-filters">
+                <label class="search-field">
+                    <span class="visually-hidden">Search classes</span>
+                    <input type="search" id="classSearch" placeholder="Search classes or subjects...">
+                </label>
+                <label>
+                    <span class="visually-hidden">Filter by subject</span>
+                    <select id="subjectFilter">
+                        <option value="all">All subjects</option>
+                        <option value="Math">Math</option>
+                        <option value="English">English</option>
+                        <option value="Science">Science</option>
+                        <option value="Coding">Coding</option>
+                        <option value="Quran">Quran</option>
+                        <option value="Workshops">Workshops</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="visually-hidden">Filter by age</span>
+                    <select id="ageFilter">
+                        <option value="all">Any age group</option>
+                        <option value="6-8">Ages 6–8</option>
+                        <option value="9-12">Ages 9–12</option>
+                        <option value="13-15">Ages 13–15</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="visually-hidden">Filter by class format</span>
+                    <select id="formatFilter">
+                        <option value="all">All class formats</option>
+                        <option value="Group Class">Group class</option>
+                        <option value="One-on-One">One-on-one</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="visually-hidden">Filter by lesson type</span>
+                    <select id="lessonFilter">
+                        <option value="all">Live & recorded</option>
+                        <option value="Live">Live classes</option>
+                        <option value="Recorded">Recorded lessons</option>
+                    </select>
+                </label>
+                <button class="button button-secondary reset-button" id="resetFilters" type="button">Reset</button>
+            </div>
+
+            <p class="results-count" id="resultsCount" aria-live="polite">Showing sample classes</p>
+            <div class="class-grid" id="classGrid">
+                <article class="class-card" data-subject="Math" data-age="6-8" data-format="Group Class" data-lesson="Live">
+                    <div class="class-card-top card-blue"><span class="class-symbol">∑</span><span class="class-tag">Live</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">Math · Ages 6–8</p>
+                        <h3>Math Made Easy</h3>
+                        <p>Build number skills with clear explanations and guided practice.</p>
+                        <div class="class-meta"><span>Group class</span><span>Teacher-led</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+                <article class="class-card" data-subject="English" data-age="9-12" data-format="One-on-One" data-lesson="Live">
+                    <div class="class-card-top card-lavender"><span class="class-symbol">Aa</span><span class="class-tag">Live</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">English · Ages 9–12</p>
+                        <h3>English & Reading</h3>
+                        <p>Practise grammar, reading and communication at your own pace.</p>
+                        <div class="class-meta"><span>One-on-one</span><span>Personal attention</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+                <article class="class-card" data-subject="Coding" data-age="13-15" data-format="Group Class" data-lesson="Live">
+                    <div class="class-card-top card-mint"><span class="class-symbol">⌘</span><span class="class-tag">Live</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">Coding · Ages 13–15</p>
+                        <h3>Creative Coding</h3>
+                        <p>Explore coding basics, logic and creative digital projects.</p>
+                        <div class="class-meta"><span>Group class</span><span>Project-based</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+                <article class="class-card" data-subject="Quran" data-age="6-8" data-format="One-on-One" data-lesson="Live">
+                    <div class="class-card-top card-peach"><span class="class-symbol">۞</span><span class="class-tag">Live</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">Quran · Ages 6–8</p>
+                        <h3>Quran Learning</h3>
+                        <p>Individual learning support based on the student's level.</p>
+                        <div class="class-meta"><span>One-on-one</span><span>Personal learning</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+                <article class="class-card" data-subject="Science" data-age="9-12" data-format="Group Class" data-lesson="Recorded">
+                    <div class="class-card-top card-blue"><span class="class-symbol">⚗</span><span class="class-tag">Recorded</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">Science · Ages 9–12</p>
+                        <h3>Science Explorers</h3>
+                        <p>Explore scientific ideas through short, guided lessons.</p>
+                        <div class="class-meta"><span>Group learning</span><span>Learn anytime</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+                <article class="class-card" data-subject="Workshops" data-age="13-15" data-format="Group Class" data-lesson="Recorded">
+                    <div class="class-card-top card-peach"><span class="class-symbol">✎</span><span class="class-tag">Recorded</span></div>
+                    <div class="class-card-content">
+                        <p class="card-category">Workshops · Ages 13–15</p>
+                        <h3>Creative Workshops</h3>
+                        <p>Try new activities and explore personal interests.</p>
+                        <div class="class-meta"><span>Group learning</span><span>Learn anytime</span></div>
+                        <a class="text-link" href="#contact">Ask about this class →</a>
+                    </div>
+                </article>
+            </div>
+            <p class="demo-disclaimer">These are example listings for the website prototype. Confirm actual classes, ages, schedules and prices before publishing.</p>
+        </section>
+
+        <section class="section learning-options" id="learning-options">
+            <div class="section-heading">
+                <p class="eyebrow">CHOOSE WHAT WORKS FOR YOU</p>
+                <h2>Two Ways to Learn</h2>
+                <p>Choose a learning format that fits your child's needs and personality.</p>
+            </div>
+            <div class="format-grid">
+                <article class="format-card format-group">
+                    <div class="format-icon">👥</div>
+                    <h3>Group Classes</h3>
+                    <p>Learn with other students through guided lessons, activities and discussion.</p>
+                    <ul>
+                        <li>Interactive group learning</li>
+                        <li>Practice and shared activities</li>
+                        <li>Build confidence with peers</li>
+                    </ul>
+                    <a class="button button-primary" href="#contact">Ask About Group Classes</a>
+                </article>
+                <article class="format-card format-private">
+                    <div class="format-icon">◉</div>
+                    <h3>One-on-One Classes</h3>
+                    <p>Individual lessons shaped around the student's level, goals and learning pace.</p>
+                    <ul>
+                        <li>Personal teacher attention</li>
+                        <li>Lessons matched to learning goals</li>
+                        <li>Individual practice and feedback</li>
+                    </ul>
+                    <a class="button button-primary" href="#contact">Ask About One-on-One</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section free-learning" id="free-learning">
+            <div class="free-copy">
+                <p class="eyebrow">START WITH A SAMPLE</p>
+                <h2>Try a Little Learning for Free</h2>
+                <p>Explore selected free tutorials before choosing a class. Sample lessons can introduce a topic and help families understand our teaching style.</p>
+                <a class="button button-primary" href="#contact">Ask for Free Learning Resources</a>
+            </div>
+            <div class="free-art" aria-hidden="true">
+                <span class="art-book">▤</span>
+                <span class="art-pencil">✎</span>
+                <span class="art-star">✦</span>
+            </div>
+        </section>
+
+        <section class="section how-it-works" id="how-it-works">
+            <div class="section-heading">
+                <p class="eyebrow">GETTING STARTED IS SIMPLE</p>
+                <h2>How It Works</h2>
+                <p>A simple path from exploring classes to starting a learning journey.</p>
+            </div>
+            <div class="steps-grid">
+                <article class="step-card"><span class="step-number">01</span><h3>Explore</h3><p>Browse subjects and choose a class that matches your interests.</p></article>
+                <article class="step-card"><span class="step-number">02</span><h3>Book a Free Demo</h3><p>Send us your details and preferred learning option.</p></article>
+                <article class="step-card"><span class="step-number">03</span><h3>Confirm & Start</h3><p>Our team contacts you to discuss availability and next steps.</p></article>
+            </div>
+        </section>
+
+        <section class="section student-stories" id="student-stories">
+            <div class="section-heading">
+                <p class="eyebrow">REAL LEARNING EXPERIENCES</p>
+                <h2>Student Stories</h2>
+                <p>Short videos from students sharing what they learned and what their classes are like.</p>
+            </div>
+            <div class="video-grid">
+                <article class="video-card">
+                    <div class="video-placeholder">
+                        <span class="play-symbol">▶</span>
+                        <span>Student video will appear here</span>
+                    </div>
+                    <div class="video-caption"><h3>Learning Experience</h3><p>Add a real student video with parent/guardian permission.</p></div>
+                </article>
+                <article class="video-card">
+                    <div class="video-placeholder video-lavender">
+                        <span class="play-symbol">▶</span>
+                        <span>Student video will appear here</span>
+                    </div>
+                    <div class="video-caption"><h3>What I Learned</h3><p>Replace this placeholder with an approved video.</p></div>
+                </article>
+                <article class="video-card">
+                    <div class="video-placeholder video-peach">
+                        <span class="play-symbol">▶</span>
+                        <span>Student video will appear here</span>
+                    </div>
+                    <div class="video-caption"><h3>A Parent's Perspective</h3><p>Optional parent feedback, shared with permission.</p></div>
+                </article>
+            </div>
+            <p class="demo-disclaimer">No testimonials are being claimed here. Add only genuine recordings and get permission before publishing children's names, images or voices.</p>
+        </section>
+
+        <section class="section written-reviews" id="reviews">
+            <div class="section-heading">
+                <p class="eyebrow">FEEDBACK MATTERS</p>
+                <h2>What Families Say</h2>
+                <p>We will share genuine feedback from families as it becomes available.</p>
+            </div>
+            <div class="review-placeholder">
+                <span class="review-quote">“</span>
+                <p>This space is reserved for an authentic parent or student review.</p>
+                <span class="review-author">Real feedback will be added here with permission.</span>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="contact-copy">
+                <p class="eyebrow">LET'S FIND THE RIGHT CLASS</p>
+                <h2>Ready to Discover Something Amazing?</h2>
+                <p>Request a free demo. Share a few details and our team can follow up to discuss suitable options.</p>
+                <div class="contact-note">
+                    <strong>What happens next?</strong>
+                    <p>After you submit the form, the academy team will need to contact you to confirm availability. This prototype form does not send information yet.</p>
+                </div>
+            </div>
+            <form class="demo-form" id="demoForm">
+                <h3>Request a Free Demo</h3>
+                <label for="parentName">Parent / Guardian Name</label>
+                <input type="text" id="parentName" name="parentName" placeholder="Enter your name" required>
+
+                <label for="contactDetails">Email or WhatsApp Number</label>
+                <input type="text" id="contactDetails" name="contactDetails" placeholder="How can we contact you?" required>
+
+                <label for="studentAge">Student's Age</label>
+                <select id="studentAge" name="studentAge" required>
+                    <option value="">Select age group</option>
+                    <option>6–8 years</option>
+                    <option>9–12 years</option>
+                    <option>13–15 years</option>
+                    <option>16+ years</option>
+                </select>
+
+                <label for="requestedSubject">Interested Subject</label>
+                <select id="requestedSubject" name="requestedSubject" required>
+                    <option value="">Choose a subject</option>
+                    <option>Math</option>
+                    <option>English</option>
+                    <option>Coding</option>
+                    <option>Quran Learning</option>
+                    <option>Science</option>
+                    <option>Creative Workshops</option>
+                    <option>Not sure yet</option>
+                </select>
+
+                <label for="requestedFormat">Preferred Class Format</label>
+                <select id="requestedFormat" name="requestedFormat" required>
+                    <option value="">Choose class format</option>
+                    <option>Group Class</option>
+                    <option>One-on-One</option>
+                    <option>Need advice</option>
+                </select>
+
+                <label for="preferredTime">Preferred Time (optional)</label>
+                <input type="text" id="preferredTime" name="preferredTime" placeholder="For example, weekday evenings">
+
+                <button class="button button-primary form-submit" type="submit">Submit Demo Request</button>
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+                <p class="form-small">Demo only: this form currently does not store or send your details.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-brand">
+            <a class="brand brand-footer" href="#home"><span class="brand-mark">✦</span><span>WonderNest <small>ACADEMY</small></span></a>
+            <p>Learn with curiosity. Grow with confidence.</p>
+        </div>
+        <div class="footer-links">
+            <a href="#academic-classes">Subjects</a>
+            <a href="#explore">Explore Classes</a>
+            <a href="#student-stories">Student Stories</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="copyright">© 2026 WonderNest Academy. All rights reserved.</p>
+        <p class="footer-note">WonderNest Academy is a project name for this website prototype. Update contact details and actual class information before launch.</p>
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+</html>
