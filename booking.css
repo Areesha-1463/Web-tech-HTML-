@@ -1,0 +1,186 @@
+
+/* Booking Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #FBFAFF;
+    color: #30364F;
+}
+
+/* Header */
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E7E5EE;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #15315E;
+    text-decoration: none;
+}
+
+.logo span {
+    display: block;
+    color: #CBA235;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #15315E;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #CBA235;
+}
+
+/* Main Booking Container */
+
+.booking-container {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(48, 54, 79, 0.08);
+}
+
+/* Booking Intro */
+
+.booking-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.small-heading {
+    color: #B18B25;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.booking-intro h1 {
+    font-size: 38px;
+    color: #15315E;
+    margin-bottom: 12px;
+}
+
+.booking-intro p {
+    color: #62677C;
+    font-size: 16px;
+}
+
+/* Form Headings */
+
+form h2 {
+    font-size: 20px;
+    color: #15315E;
+    margin-top: 30px;
+    border-bottom: 1px solid #EEEEF4;
+    padding-bottom: 12px;
+}
+
+/* Form Grid */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Form Fields */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 9px;
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    padding: 13px;
+    border: 1px solid #D9DCE7;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    background: white;
+    color: #30364F;
+    font-family: Arial, sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #CBA235;
+    border-color: #CBA235;
+}
+
+/* Submit Button */
+
+.submit-btn {
+    background: #15315E;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 9px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #CBA235;
+    transform: translateY(-2px);
+}
+
+/* Confirmation Message */
+
+#confirmation {
+    text-align: center;
+    color: #247B57;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .booking-intro h1 {
+        font-size: 28px;
+    }
+
+    .booking-header {
+        padding: 15px 5%;
+    }
+}
