@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore academic subjects, languages, coding, Quran classes, creative skills and workshops at Intl Virtual Academy.">
+
+    <title>Our Subjects | Intl Virtual Academy</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        .subjects-page {
+            padding: 65px 7%;
+            background: #f5f7fc;
+            color: #10284c;
+        }
+
+        .subjects-intro {
+            max-width: 750px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .subjects-intro .eyebrow {
+            color: #c9a43b;
+            font-weight: 800;
+            letter-spacing: 2px;
+        }
+
+        .subjects-intro h1 {
+            font-size: 42px;
+            margin: 12px 0;
+            color: #10284c;
+        }
+
+        .subjects-intro p {
+            color: #64748b;
+            line-height: 1.8;
+        }
+
+        .subject-list {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .subject-box {
+            padding: 28px;
+            border-radius: 18px;
+            border: 1px solid #e2e8f0;
+            border-top: 5px solid #c9a43b;
+            background: white;
+            box-shadow: 0 6px 20px rgba(16, 40, 76, 0.06);
+        }
+
+        .subject-box:nth-child(1) {
+            background: #fffaf0;
+            border-top-color: #e8b84a;
+        }
+
+        .subject-box:nth-child(2) {
+            background: #f1f8ff;
+            border-top-color: #55a8df;
+        }
+
+        .subject-box:nth-child(3) {
+            background: #effbf8;
+            border-top-color: #47b5a5;
+        }
+
+        .subject-box:nth-child(4) {
+            background: #fff3f7;
+            border-top-color: #d8799c;
+        }
+
+        .subject-box:nth-child(5) {
+            background: #f6f2ff;
+            border-top-color: #9b88dc;
+        }
+
+        .subject-box:nth-child(6) {
+            background: #fff5ed;
+            border-top-color: #e99b65;
+        }
+
+        .subject-box h2 {
+            font-size: 23px;
+            margin-top: 0;
+            color: #10284c;
+        }
+
+        .subject-box ul {
+            padding-left: 20px;
+            color: #53647b;
+            line-height: 2;
+        }
+
+        .subject-box li::marker {
+            color: #c9a43b;
+        }
+
+        .subject-box a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 18px;
+            background: #10284c;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .subject-box a:hover {
+            background: #c9a43b;
+            color: #10284c;
+        }
+
+        .subjects-bottom {
+            text-align: center;
+            margin-top: 45px;
+        }
+
+        .subjects-bottom p {
+            color: #53647b;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .subject-list {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .subject-list {
+                grid-template-columns: 1fr;
+            }
+
+            .subjects-intro h1 {
+                font-size: 32px;
+            }
+
+            .subjects-page {
+                padding: 45px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a class="brand academy-brand" href="index.html">
+            <span class="academy-name">
+                <span>Intl Virtual</span>
+                <span>Academy</span>
+            </span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="subjects.html" aria-current="page">Subjects</a>
+            <a href="explore-classes.html">Explore Classes</a>
+            <a href="class-types.html">Class Types</a>
+            <a href="student-stories.html">Student Stories</a>
+            <a class="nav-cta" href="book-demo.html">Book a Free Demo</a>
+        </nav>
+
+    </header>
+
+    <main class="subjects-page">
+
+        <!-- Page Introduction -->
+        <section class="subjects-intro">
+            <p class="eyebrow">DISCOVER YOUR INTERESTS</p>
+
+            <h1>Explore Our Subjects</h1>
+
+            <p>
+                From academic learning to creative skills and technology,
+                discover classes that inspire curiosity, build confidence
+                and help every learner grow.
+            </p>
+        </section>
+
+        <!-- Subject Categories -->
+        <section class="subject-list">
+
+            <article class="subject-box">
+                <h2>Academic Subjects</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Mathematics</li>
+                    <li>Science</li>
+                    <li>Arabic</li>
+                    <li>Hindi</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+            <article class="subject-box">
+                <h2>Language Learning</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Arabic</li>
+                    <li>Urdu</li>
+                    <li>Hindi</li>
+                    <li>French</li>
+                    <li>Chinese</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+            <article class="subject-box">
+                <h2>Coding &amp; Technology</h2>
+                <ul>
+                    <li>Scratch Coding</li>
+                    <li>Python Programming</li>
+                    <li>Artificial Intelligence (AI)</li>
+                    <li>Canva &amp; Graphic Design</li>
+                    <li>Web Design (Basics)</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+            <article class="subject-box">
+                <h2>Islamic Learning</h2>
+                <ul>
+                    <li>Quran Classes</li>
+                    <li>Tajweed</li>
+                    <li>Seerah Courses</li>
+                    <li>Islamic Studies</li>
+                    <li>Duas &amp; Memorisation</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+            <article class="subject-box">
+                <h2>Creative &amp; Life Skills</h2>
+                <ul>
+                    <li>Cursive Writing</li>
+                    <li>Creative Writing</li>
+                    <li>Public Speaking</li>
+                    <li>Art &amp; Craft</li>
+                    <li>Presentation Skills</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+            <article class="subject-box">
+                <h2>Short Courses &amp; Workshops</h2>
+                <ul>
+                    <li>Science Experiments</li>
+                    <li>Maths Challenges</li>
+                    <li>Canva for Students</li>
+                    <li>AI Tools for Students</li>
+                    <li>Storytelling</li>
+                </ul>
+                <a href="explore-classes.html">Explore Classes</a>
+            </article>
+
+        </section>
+
+        <!-- Bottom Call to Action -->
+        <section class="subjects-bottom">
+            <h2>Not Sure Which Class to Choose?</h2>
+            <p>
+                Tell us about your interests and we will help you
+                find a suitable learning option.
+            </p>
+
+            <a class="button button-primary" href="book-demo.html">
+                Book a Free Demo
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-brand">
+            <a href="index.html" class="footer-name">
+                <span>Intl Virtual</span>
+                <span>Academy</span>
+            </a>
+
+            <p>Learn Anywhere, Achieve Everywhere.</p>
+        </div>
+
+        <nav class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="subjects.html">Subjects</a>
+            <a href="explore-classes.html">Explore Classes</a>
+            <a href="class-types.html">Class Types</a>
+            <a href="student-stories.html">Student Stories</a>
+            <a href="book-demo.html">Book a Free Demo</a>
+        </nav>
+
+        <p class="copyright">
+            © 2026 Intl Virtual Academy. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
